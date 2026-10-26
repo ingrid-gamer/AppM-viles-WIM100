@@ -2,8 +2,6 @@
 
 Aplicación académica Android para digitalizar la postulación, evaluación y resolución de candidaturas del programa WIM 100 de DYM Cyber. Proyecto Kotlin + Jetpack Compose, arquitectura MVVM, Room/SQLite y dependencias con inyección manual.
 
-> **Antes de entregar:** reemplaza los nombres de las integrantes en la sección de equipo, abre el proyecto en Android Studio, instala el SDK 37 y ejecuta la sincronización, las pruebas y la app en un teléfono real. Esta entrega incluye el código fuente y los tests, pero el entorno donde se generó no tenía Android SDK ni Gradle instalado; por eso no se pudo verificar una compilación Android completa desde aquí.
-
 ## 1. Funciones principales
 
 - Dos perfiles de acceso: **Evaluadora** y **Dirección**. La persona escribe cualquier nombre de usuario no vacío y selecciona el perfil; una contraseña distinta valida cada perfil. Evaluadora puede registrar candidatas y guardar evaluaciones; Dirección puede consultar ranking/historial y resolver la selección.
@@ -69,9 +67,6 @@ Si un archivo no es un PDF válido, está vacío o supera 5 MB, aparece un mensa
 - `allowBackup="false"`, `adjustResize`, edge-to-edge y `FileProvider` limitado a la carpeta privada `files/cvs/`.
 - `dynamicColor = false` en el tema; paleta violeta, turquesa y magenta.
 
-> Nota de compatibilidad: AGP 8.13.2/Gradle 8.13 es la combinación que mejor encaja con Kotlin 2.2.10 y KSP 2.2.10-2.0.2 solicitados. La matriz oficial actual indica que API 37 necesita AGP 9.1.1 o posterior; por eso puede aparecer una advertencia o ser necesario ajustar el plugin si tu entorno exige validación estricta de SDK 37. No se actualizó silenciosamente la versión de Kotlin/KSP porque son requisitos explícitos de la pauta.
->
-> Los paquetes de Gradle están configurados para descargarse desde los repositorios Maven/Google. La carpeta `local.properties` **no se incluye**: Android Studio la genera con la ruta del SDK local. `build/`, `.gradle/`, `.kotlin/` y los archivos locales se excluyen mediante `.gitignore`.
 
 ## 6. Mapeo de requisitos a archivos
 
@@ -116,8 +111,8 @@ Si un archivo no es un PDF válido, está vacío o supera 5 MB, aparece un mensa
 
 ## 8. Equipo
 
-- Integrante 1: **[REEMPLAZAR CON NOMBRE]**
-- Integrante 2: **[REEMPLAZAR CON NOMBRE]**
+- Integrante 1: Ingrid Araya
+- Integrante 2: Oliver Salinas
 
 ## 9. Consideraciones de alcance
 
